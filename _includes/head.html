@@ -1,0 +1,17 @@
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="images/cross-2-design-blue-just-graphic@sm.png">
+	<title>Maria Jasienowski</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300|Quattrocento" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  {% for css in page.css %}
+         <link rel="stylesheet" href="css/{{ css }}" type="text/css" />
+  {% endfor %}
+
+	{% for js in page.javascript %}
+				 <script src="js/{{ js }}"></script>
+	{% endfor %}
+</head>
